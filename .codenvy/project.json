@@ -1,1 +1,0 @@
-{"mixinTypes":["contribution"],"builders":{"configs":{}},"runners":{"configs":{"system:/cpp/simple":{"ram":1000,"variables":{},"options":{}}},"default":"system:/cpp/simple"},"type":"cpp","attributes":{"contribute_branch":["master"],"contribute_mode":["contribute"],"language":["cpp"]}}
