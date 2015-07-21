@@ -8,6 +8,8 @@ This projects doesn't really do anything to show off to your friends, but is a u
 
 ## Prerequisites
 You need to have platformio installed to run this code (If you feel like it, you can adapt it to run in the usual Arduino IDE)
+Initialise the project with
+```platformio init```
 
 ## Running the code
 ```platformio run```
