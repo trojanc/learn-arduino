@@ -2,3 +2,4 @@
 /.cproject
 /.project
 /platformio.ini
+.sconsign.dblite
