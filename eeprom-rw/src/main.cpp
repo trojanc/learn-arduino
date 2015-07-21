@@ -1,3 +1,12 @@
+/**
+ * Author      : Charl Thiem
+ * Created     : 2015-07-13
+ * Description : A simple program to demonstrate how to read and write to EEPROM
+ */
+ 
+ /*
+  * Include the Arduino header, as well as the EEPROM library
+  */
 #include <Arduino.h>
 #include <EEPROM.h>
 
@@ -59,12 +68,11 @@ void write10Bytes(){
  * Setup for this app
  */
 void setup(){
-  // initialize serial and wait for port to open:
-  Serial.begin(115200);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for Leonardo only
-  }
-
+	// initialize serial and wait for port to open:
+	Serial.begin(115200);
+	while (!Serial) {
+		; // wait for serial port to connect. Needed for Leonardo only
+	}
 }
 
 
@@ -74,4 +82,5 @@ void setup(){
 void loop(){
 	print10Bytes();
 	write10Bytes();
+	// Continues forever, reboot/unplug the device to see that the velues remain stored
 }

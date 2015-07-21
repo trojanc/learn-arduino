@@ -13,3 +13,6 @@ Initialise the project with
 
 ## Running the code
 ```platformio run```
+
+## Online tutorial
+See more information on my [website](http://www.trojanc.co.za/2015/07/13/learn-arduino-readwrite-eeprom/).
