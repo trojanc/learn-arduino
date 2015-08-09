@@ -1,5 +1,5 @@
-# onewire-list
-A simple project that searches a OneWire bus for connected devices
+# blink
+Blink an LED on a digital pin
 
 
 ## Prerequisites
