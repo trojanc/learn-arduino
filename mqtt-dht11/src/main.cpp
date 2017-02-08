@@ -5,7 +5,7 @@
 
 #define CONNECTOR "mqtt"
 // MQTT topic on which we will publish
-#define TOPIC "arduino/dht11"
+#define TOPIC "trojanc/learn-arduino/mqtt-dht11"
 
 // Last millis that we sent an update
 unsigned long lastupdate = 0;
