@@ -3,17 +3,19 @@
 #include <UnoWiFiDevEd.h>
 #include <DHT.h>
 
-#define PIN_DHT11 5
 #define CONNECTOR "mqtt"
+// MQTT topic on which we will publish
 #define TOPIC "arduino/dht11"
 
+// Last millis that we sent an update
 unsigned long lastupdate = 0;
 
 // DHT connected to pin 5
-DHT dht(PIN_DHT11, DHT11);
+DHT dht(5, DHT11);
 
 void setup(void){
 	Serial.begin(115200);
+	Serial.println(F("TrojanC - Learn Arduino:: mqtt-dht11"));
 	Ciao.begin();
 	dht.begin();
 }
@@ -21,7 +23,7 @@ void setup(void){
 
 void loop(void){
 	// If we updated 2 seconds ago
-	if((millis() - lastupdate) <= 2000){
+	if(((unsigned long)(millis() - lastupdate)) >= 2000){
 		lastupdate = millis();
 		float temperature = dht.readTemperature();
 		Serial.print(F("Temperature: "));Serial.println(temperature);
